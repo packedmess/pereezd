@@ -28,15 +28,6 @@ window.addEventListener("keydown", function (evt) {
 	}
 });
 
-window.addEventListener("keydown", function (evt) {
-	if (evt.keyCode === 27) {
-		evt.preventDefault();
-		if (requestPopup.classList.contains("modal-show")) {
-			requestPopup.classList.remove("modal-show");
-		}
-	}
-});
-
 for (let i = 0; i < feedbackClose.length; i++) {
 	feedbackClose[i].addEventListener("click", function (evt) {
 		evt.preventDefault();
@@ -50,3 +41,12 @@ for (let i = 0; i < requestClose.length; i++) {
 		requestPopup.classList.remove("modal-show");
 	});
 };
+
+window.addEventListener("keydown", function (evt) {
+	if (evt.keyCode === 27) {
+		evt.preventDefault();
+		if (requestPopup.classList.contains("modal-show")) {
+			requestPopup.classList.remove("modal-show");
+		}
+	}
+});

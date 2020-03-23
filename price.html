@@ -15,23 +15,24 @@
          <div class="header__top">
             <div class="header__top-wrapper">
                <a class="header__logo" href="index.html">
-               <img class="header__logo-image" src="img/logo.png" width="100" height="90" alt="Домашний переезд">
-               <span class="header__logo-text">Домашний переезд</span>
+                  <img class="header__logo-image" src="img/logo.png" width="100" height="90" alt="Домашний переезд">
+                  <span class="header__logo-text">Домашний переезд</span>
                </a>
                <ul class="header__contacts">
                   <li class="header__contacts-phone"><a href="tel:+79505664666">8 (950) 566-46-66</a></li>
                   <li class="header__contacts-email"><a href="mailto:gruz11reg@yandex.ru">gruz11reg@yandex.ru</a></li>
                   <li class="header__contacts-feedback"><a class="header__contacts-feedback-button button modal--feedback-open" href="feedback.html">Обратная связь</a></li>
                </ul>
+               <button class="header__navigation-toggle navigation--close" type="button"><span class="visually-hidden">Открыть меню</span></button>
             </div>
          </div>
          <div class="header__bottom">
             <div class="header__bottom-wrapper">
-               <nav class="navigation">
+               <nav class="navigation navigation--closed">
                   <ul class="navigation__list">
                      <li class="navigation__item">
-                        <a class="navigation__item-link subnavigation-open" href="about.html">О компании</a>
-                        <ul class="subnavigation subnavigation__about">
+                        <a class="navigation__item-link subnavigation-toggle subnavigation-toggle-about subnavigation-toggle--close" href="about.html">О компании</a>
+                        <ul class="subnavigation subnavigation__about subnavigation--close">
                            <li class="subnavigation__item">
                               <a class="subnavigation__item-link" href="requisites.html">Реквизиты</a>
                            </li>
@@ -44,8 +45,8 @@
                         </ul>
                      </li>
                      <li class="navigation__item">
-                        <a class="navigation__item-link subnavigation-open" href="services.html">Услуги</a>
-                        <ul class="subnavigation subnavigation__services">
+                        <a class="navigation__item-link subnavigation-toggle subnavigation-toggle-services subnavigation-toggle--close" href="services.html">Услуги</a>
+                        <ul class="subnavigation subnavigation__services subnavigation--close">
                            <li class="subnavigation__item">
                               <a class="subnavigation__item-link" href="home-relocation.html">Домашние переезды</a>
                            </li>
@@ -340,5 +341,6 @@
          <div class="modal__close modal-close"></div>
       </section>
       <script src="js/modal.min.js"></script>
+      <script src="js/navigation.js"></script>
    </body>
 </html>
